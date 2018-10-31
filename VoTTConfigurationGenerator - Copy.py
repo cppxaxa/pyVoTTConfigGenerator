@@ -2,8 +2,8 @@ import json
 
 class VoTTConfiguration:
     def CreateDummy(self):
-        self.frames = {}
-        self.frames["0"] = [
+        self.frames = {
+            "0": [
                         {
                             "x1": 63,
                             "y1": 10,
@@ -18,8 +18,8 @@ class VoTTConfiguration:
                                   ],
                             "name": 1                            
                         }
-                ]
-        self.frames["1"] = [
+                ],
+            "1": [
                         {
                             "x1": 42,
                             "y1": 5,
@@ -36,6 +36,7 @@ class VoTTConfiguration:
                             "name": 1                            
                         }
                 ]
+        }
         self.framerate = "1"
         self.inputTags = "person,girl,hand-raised-person"
         self.suggestiontype = "track"
